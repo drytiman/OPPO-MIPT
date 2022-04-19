@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: url("https://look.com.ua/pic/201512/1920x1080/look.com.ua-140032.jpg");
+      font-family: "Roboto Light", sans-serif;
+    }
+    h2{
+      text-align: center;
+    }
+    input{
+      height: 45px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      border: 2px solid #E9F2FF;
+      border-radius: 5px;
+      padding-left: 25px;
+    }
+    input:focus{
+      outline: none;
+      border: 2px solid #C1D9FD;
+    }
+    main{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-title{
+      color: #E78B03;
+      font-weidth: 500px;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 15px;
+
+    }
+    .register-form-container{
+      opacity: 0;
+      position: relative;
+      z-index: 2;
+      max-width: 415px;
+      width: 100%;
+      background: white;
+      box-shadow: 0px 5px 6px rgba(217, 229, 255, 0.7);
+      border-radius: 20px;
+      padding: 38px 30px;
+      animation-name: fadeForm;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: .25s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeForm {
+      0%{
+        opacity: 0;
+      }
+      25%{
+        opacity: .25;
+      }
+      50%{
+        opacity: .5;
+      }
+      75%{
+        opacity: .75;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .form-field{
+      margin-bottom: 13px;
+    }
+    .button{
+      font-weight: bold;
+      font-size: 14px;
+      display:block;
+      height: 35px;
+      width: 100%;
+      background: #DEE7AE;
+      border-radius: 5px;
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+    }
+    .button-google{
+      margin-bottom: 50px;
+    }
+    .button:hover{
+      background: #FBE4C8;
+    }
+
+
+    a.button{
+      text-decoration: none;
+    }
+    .button-google{
+      color: black;
+      background: #DEE7AE;
+      line-height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <div class="register-form-container">
+    <h2 class="form-title">
+      Ты студент и хочешь изучить английский язык, тогда тебе к нам
+    </h2>
+    <div class="form-buttons">
+      <a href="/registration/student" class="button button-google">ПРИСОЕДИНИТЬСЯ</a>
+    </div>
+    <h2 class="form-title">
+      Ты преподаватель и готов поделиться знаниями, тогда тебе к нам
+    </h2>
+    <div class="form-buttons">
+      <a href="/registration/teacher" class="button button-google">ПРИСОЕДИНИТЬСЯ</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

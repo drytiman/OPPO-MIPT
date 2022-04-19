@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+    }
+    #text_body{
+      vertical-align: center;
+      width: 400px;
+      color: #000000; /* Цвет текста */
+      padding: 10px; /* Поля вокруг текста */
+    }
+    div::after {
+      content: "";
+      background: url("https://cdnn21.img.ria.ru/images/07e6/01/0d/1767717610_0:46:3154:1820_1920x0_80_0_0_3056dd85d823c0eb804a671d06f41a79.jpg");
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+    #block-body{
+      width: 1920px;
+      margin: auto;
+      height: auto;
+    }
+    header{
+      width: 1920px;
+      height: 100px;
+      background-color: #86afb4;
+    }
+    .logo{
+      width: 350px;
+      float: left;
+      height: 100px;
+    }
+    .logo a{
+      display: block;
+      margin-left: 15px;
+      margin-top: 10px;
+      font-family: sans-serif;
+      font-size: 40px;
+      color: blue;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .use{
+      color: #D6C682;
+    }
+    .web{
+      color: aqua;
+    }
+    .logo p{
+      margin-left: 20px;
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: white;
+    }
+    .top-menu{
+      margin-left: 150px;
+      width: 1000px;
+      height: 100px;
+      float: left;
+    }
+    .top-menu ul li{
+      list-style: none;
+      float: left;
+      text-align: center;
+    }
+    .top-menu ul li a {
+      display: block;
+      width: 250px;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 25px;
+      color: white;
+      height: 65px;
+      padding-top: 35px;
+      cursor: pointer;
+    }
+    .top-menu ul li a:hover{
+      color: black;
+      transition: all 0.5s ease;
+      background-color: #D6C682;
+    }
+    .block-top-auth{
+      width: 250px;
+      float: left;
+      height: 100px;
+      margin-left: 165px;
+    }
+    .block-top-auth p{
+      margin-top: 35px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .block-top-auth a{
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .block-top-auth a:hover{
+      transition: all 0.5s ease;
+      color: #D6C682;
+    }
+    TABLE {
+      margin-left: 660px;
+      margin-top: -10px;
+      width: 600px;
+      background-color: #DEE7AE;
+    }
+    #col1 {
+      width: 100%;
+      background: #D6C682;
+    }
+    th{
+      background: #DEE7AE;
+    }
+    #col1 {
+      vertical-align: top;
+      padding: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="block-body">
+  <header>
+    <div class="logo">
+      <a href="/home">
+        <span class="use">Центральный</span>&nbsp<span class="use">Банк</span>
+      </a>
+      <p>Банки - это удобно</p>
+    </div>
+    <div class="top-menu">
+      <ul>
+        <li><a href="/news">Операции</a></li>
+        <li><a href="#">Счета</a></li>
+        <li><a href="#">Основатели</a></li>
+        <li><a href="#">Обратная связь</a></li>
+      </ul>
+    </div>
+    <div class="block-top-auth">
+      <p>
+        <a href="/lk_client">Личный кабинет</a></p>
+    </div>
+  </header>
+</div>
+<div align="center" id="text_body">
+  <table border="black">
+    <tr>
+      <th id="col1"> ИНСТРУМЕНТЫ </th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/admins/investment">Посмотреть список счетов Банка</a> </p></th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/canceled_show">Посмотреть список отменненых операций</a> </p></th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/canceled_operation">Отменить операцию</a> </p></th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/verification">Добавить условие для верификации</a> </p></th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/commission_percent">Добавить комиссию и процент</a> </p></th>
+    </tr>
+    <tr>
+      <th> <p align="centre"  style="color:#000000; font-size:20px"><a href="/calc">Посчитать процент и комиссию</a> </p></th>
+    </tr>
+
+  </table>
+</div>
+</body>
+</html>
